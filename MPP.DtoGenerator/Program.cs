@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DtoGenerator.DtoClass;
+using MPP.DtoGenerator.ClassReader;
 
 namespace MPP.DtoGenerator
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            string filename = "dto.txt";
+
+            IDtoDescriptionFileReader descriptionReader = new JsonClassFileReader();
+
+            DtoDescriptionDocument document = descriptionReader.ReadDtoDescription(filename);
+
+
         }
     }
 }
