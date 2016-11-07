@@ -2,10 +2,13 @@
 using DtoGenerator.DtoDescriptions;
 using Newtonsoft.Json;
 
-namespace DtoGenerator.DtoClass
+namespace DtoGenerator.Dto.Description
 {
-    public class DtoClassDesciption
+    public class DtoClassDescription
     {
+        [JsonIgnore]
+        public string Namespace { get; set; }
+
         [JsonProperty("className")]
         public string ClassName { get; set; }
 
