@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace DtoGenerator.DtoDescriptions
+namespace DtoGenerator.Dto.Description
 {
     public class DtoPropertyDescription
     {
@@ -14,5 +9,8 @@ namespace DtoGenerator.DtoDescriptions
 
         [JsonProperty("type")]
         public string Type { get; set; }
+
+        [JsonProperty("format")]
+        public string Format { get; set; }
     }
 }
