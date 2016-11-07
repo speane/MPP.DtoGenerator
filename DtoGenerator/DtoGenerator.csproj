@@ -44,9 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DtoDescriptions\DtoClassDesciption.cs" />
-    <Compile Include="DtoDescriptions\DtoDescriptionDocument.cs" />
-    <Compile Include="DtoDescriptions\DtoPropertyDescription.cs" />
+    <Compile Include="Generator\Dto\Description\DtoClassDescription.cs" />
+    <Compile Include="Generator\Dto\Description\DtoPropertyDescription.cs" />
+    <Compile Include="Generator\Dto\DtoClass.cs" />
+    <Compile Include="Generator\Dto\DotNetTypeFactory.cs" />
     <Compile Include="Generator\DtoGenerator.cs" />
     <Compile Include="Generator\IDtoGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
