@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DtoGenerator.DtoClass;
+﻿using DtoGenerator.Dto.Description;
 
 namespace DtoGenerator.Generator
 {
     public interface IDtoGenerator
     {
-        string GenerateClassDescriptionBody(DtoClassDesciption classDesciption);
+        string GenerateClassDescriptionBody(DtoClassDescription classDesciption);
     }
 }
